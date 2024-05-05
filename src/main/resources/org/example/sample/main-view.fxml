@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="741.0" prefWidth="1213.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.sample.MainController">
+   <children>
+      <AnchorPane prefHeight="78.0" prefWidth="1213.0" style="-fx-background-color: #610000;">
+         <children>
+            <Button fx:id="myList" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onMyListButtonClick" prefHeight="52.0" prefWidth="145.0" text="Mis Listas" />
+            <Button fx:id="crearListaNueva" layoutX="173.0" layoutY="14.0" mnemonicParsing="false" onAction="#onNewListButtonClick" prefHeight="52.0" prefWidth="145.0" text="Crear Lista Nueva" />
+            <Label fx:id="usuarioActivo" alignment="CENTER_RIGHT" layoutX="700.0" layoutY="26.0" prefHeight="27.0" prefWidth="438.0" text="Usuario Activo" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="1147.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/profile.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="78.0" prefHeight="663.0" prefWidth="1213.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #701720, #101720);" />
+      <ScrollPane fx:id="scrollPane" layoutY="78.0" prefHeight="663.0" prefWidth="1213.0" style="-fx-background-color: transparent">
+         <content>
+            <FlowPane fx:id="panelTarjetas" prefHeight="663.0" prefWidth="1213.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #701720, #101720);">
+               <padding>
+                  <Insets bottom="10" left="10" top="10" />
+               </padding>
+            </FlowPane>
+         </content>
+      </ScrollPane>
+      <AnchorPane fx:id="newList" layoutY="78.0" prefHeight="158.0" prefWidth="1213.0" visible="false">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Puntos: " textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="puntosComboBox" layoutX="149.0" layoutY="19.0" prefHeight="25.0" prefWidth="84.0" />
+            <Label layoutX="284.0" layoutY="15.0" text="Gran Alianza: " textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="caosRadio" layoutX="408.0" layoutY="22.0" mnemonicParsing="false" text="Caos" textFill="WHITE" />
+            <RadioButton fx:id="destRadio" layoutX="408.0" layoutY="45.0" mnemonicParsing="false" text="Destrucción" textFill="WHITE" />
+            <RadioButton fx:id="ordenRadio" layoutX="519.0" layoutY="22.0" mnemonicParsing="false" text="Orden" textFill="WHITE" />
+            <RadioButton fx:id="muerteRadio" layoutX="519.0" layoutY="45.0" mnemonicParsing="false" text="Muerte" textFill="WHITE" />
+            <Label layoutX="629.0" layoutY="16.0" text="Facción: " textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="faccionChoiceBox" layoutX="706.0" layoutY="19.0" prefWidth="150.0" />
+            <Label fx:id="puntosLabel" layoutX="81.0" layoutY="16.0" prefHeight="30.0" prefWidth="47.0" style="-fx-alignment: center-right;" text="0" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="134.0" layoutY="16.0" text="/" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+
+            <Label layoutX="14.0" layoutY="77.0" text="Unidades Líderes: " textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="lideresComboBox" layoutX="200.0" layoutY="79.0" prefWidth="150.0" />
+
+            <Label layoutX="14.0" layoutY="119.0" text="Linea de Batalla: " textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="lineaBatallaBox" layoutX="200.0" layoutY="122.0" prefWidth="150.0" />
+            <Button fx:id="buttonPDF" layoutX="952.0" layoutY="54.0" mnemonicParsing="false" onAction="#onButtonPDFClick" prefHeight="25.0" prefWidth="187.0" text="Crear PDF" />
+            <TextField fx:id="nombreLista" layoutX="952.0" layoutY="19.0" prefHeight="25.0" prefWidth="187.0" promptText="Nombre de la lista..." />
+
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="scrollPane1" layoutY="241.0" prefHeight="498.0" prefWidth="1213.0" style="-fx-background-color: transparent" visible="false">
+         <content>
+            <FlowPane fx:id="panelTarjetas1" prefHeight="576.0" prefWidth="1213.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #701720, #101720);" visible="false">
+               <padding>
+                  <Insets bottom="10" left="10" top="10" />
+               </padding>
+            </FlowPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

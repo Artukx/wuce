@@ -1,0 +1,323 @@
+filas:
+  - id: grotz_brinkadorez
+    rol: linea_batalla
+    nombre: Grotz Brinkadorez
+    gran_alianza: Destrucción
+    alianza: Tipejoz Nokturnoz
+    movimiento: 1D6+7"
+    salva: 4+
+    coraje: 5
+    minis: 5
+    puntos: 160
+    heridas: 2
+    habilidades:
+      - nombre: Montura
+        descripción: Los Garrapatoz Kaverníkolaz atacan con sus bokazas colmilludas
+      - nombre: Volar
+        descripción: Esta unidad puede volar
+      - nombre: Campeón
+        descripción: 1 mini es un Jefe Brinkador, Suma 1 al atributo Ataques de la lanza pinchoza de esa mini
+      - nombre: ¡Boing! ¡Chof!
+        descripción: Después de un movimiento de carga elige 1 unidad enemiga a 1" o menos de esta unidad y tira un dado por cada mini en esta unidad. Por cada +4, esa unidad enemiga sufre 1 herida mortal.
+      - nombre: Lanzas de los Brinkadorez
+        descripción: Si esta unidad ha cargado en el mismo turno, suma 1 al atributo Daño y mejora en 1 el atributo Perforar de las lanzaz pinchozaz de esta unidad.
+    Claves:
+      - DESTRUCCIÓN
+      - TIPEJOZ NOKTURNOZ
+      - GROT
+      - GARRAPATO
+      - KLAN LUNAR
+      - GROTZ  BRINKADOREZ
+    command_abilities:
+      - name: Lord of the Host
+        value: 1
+    magia: []
+    tabla_daño:
+      - wound_track_position: 0
+        move: 5"
+        min_wounds_suffered: 0
+    armas_melee:
+      - nombre: Lanza pinchoza
+        rango: 2"
+        ataques: '2'
+        impactar: '4+'
+        herir: '3+'
+        perforar: '-1'
+        daño: '1'
+      - name: Bokaza colmilluda
+        rango: 1"
+        ataques: '3'
+        impactar: '4+'
+        herir: '3+'
+        perforar: '-1'
+        daño: '1'
+    missile_weapons: []
+
+  - id: shootas
+    rol: linea_batalla
+    nombre: Shootas
+    gran_alianza: Destrucción
+    alianza: Tipejoz Nokturnoz
+    movimiento: 5"
+    salva: 6+
+    coraje: 4
+    minis: 20
+    puntos: 120
+    heridas: 1
+    habilidades:
+      - nombre: Campeón
+        descripción: 1 miniatura de esta unidad puede ser un Moonclan Boss. Suma 1 al atributo Ataques del Arco Moonclan de esa miniatura.
+      - nombre: Portaestandarte
+        descripción:  1 de cada 20 minis puede ser un Portaikonoz de la Luna Malvada. Suma 1 a las tiradas de salvación contra ataques con armas a distancia.
+      - nombre: Músico
+        descripción: 1 de cada 20 minis puede ser un Zakudegongs. Suma 1 a las tiradas de correr
+      - nombre: Ekipoz de redez
+        descripción: Resta 1 a las tiradas para impactar en ataques de uds. enemigas que esten a 1" o menos.
+      - nombre: Flechaz a montonez
+        descripción: Suma 1 al atributo ataque de  los arcos mientras tenga 10 o mas minis.
+    Claves:
+      - DESTRUCCIÓN
+      - TIPEJOZ NOKTURNOZ
+      - GROT
+      - KLAN LUNAR
+      - ARKEROZ DE KLAN LUNAR
+    command_abilities: [ ]
+    magia: [ ]
+    tabla_daño:
+      - wound_track_position:
+        move:
+        min_wounds_suffered:
+    armas_melee:
+      - nombre: Kortakuelloz
+        rango: 1"
+        ataques: '1'
+        impactar: '5+'
+        herir: '5+'
+        perforar: '-'
+        daño: '1'
+      - nombre: Red Ezpinoza
+        rango: 2"
+        ataques: '3'
+        impactar: '4+'
+        herir: '5+'
+        perforar: '-'
+        daño: '1'
+    missile_weapons:
+      - nombre: Arco de Klan Lunar
+        rango: 20"
+        ataques: '1'
+        impactar: '4+'
+        herir: '5+'
+        perforar: '-'
+        daño: '1'
+
+  - id: troggoths_triparroka
+    rol: linea_batalla
+    nombre: Troggoths Triparroka
+    gran_alianza: Destrucción
+    alianza: Tipejoz Nokturnoz
+    movimiento: 6"
+    salva: 4+
+    coraje: 5
+    minis: 3
+    puntos: 170
+    heridas: 4
+    habilidades:
+      - nombre: Piedras pa lanzar
+        descripción: No sigas la secuencia de ataque. En lugar de eso, elige 1 ud. enemiga dentro del alcance y tira un dado. suma 1 a la tirada si la unidad blanco tiene 5 o más minis. 4+ la  ud. enemiga sufre 1 herida mortal.
+      - nombre: Piel pétrea
+        descripción: Salvaguarda 5+.
+      - nombre: Regeneración
+        descripción: Al inicio de tu fase de héroe, puedes curar hasta 1D3 heridas asignadas a esta unidad.
+    Claves:
+      - DESTRUCCIÓN
+      - TIPEJOZ NOKTURNOZ
+      - TROGGOTH
+      - TROGGOTHS TRIPARROKA
+    command_abilities: [ ]
+    magia: [ ]
+    tabla_daño:
+      - wound_track_position:
+        move:
+        min_wounds_suffered:
+    armas_melee:
+      - nombre: Gran maza de piedra
+        rango: 2"
+        ataques: '2'
+        impactar: '3+'
+        herir: '3+'
+        perforar: '-2'
+        daño: '3'
+    missile_weapons:
+      - nombre: Piedras pa lanzar
+        rango: 9"
+        ataques: '1'
+        impactar: '-'
+        herir: '-'
+        perforar: '-'
+        daño: '-'
+
+  - id: grotchondeo
+    rol: linea_batalla
+    nombre: Grotchondeo
+    gran_alianza: Destrucción
+    alianza: Tipejoz Nokturnoz
+    movimiento: 5"
+    salva: 6+
+    coraje: 5
+    minis: 5
+    puntos: 180
+    heridas: 3
+    habilidades:
+      - nombre: MAGO
+        descripción: El Ojopazmado y el Hongomago pueden intentar lanzar 1 hechizo en tu fase de héroe e intentar disipar 1 hechizo en la fase de héroe del enemigo, los dos conocen la  misma mejora del saber de hechizos.
+      - nombre: Brebaje fungozo aluzinógeno
+        descripción: En la primera ronda de batalla esta unidad tiene salvaguarda 4+, en la segunda 5+, en la tercera y subsiguientes 6+.
+      - nombre: Zabiduria del Grotchondeo
+        descripción: Una vez por turno en tu fase de héroe, esta unidad puede usar 1 de los siguientes efectos
+      - nombre: Danza de Karabrillante
+        descripción: Solo si tienes un Azuztador. Elige 1 ud. TIPEJOZ NOKTURNOZ amiga completamente a 12" o menos. Suma 1 a las tiradas de correr y de carga para esta unidad hasta tu siguiente fase de héroe.
+      - nombre: Trueke de pozionez
+        descripción: Solo si tienes un Deztilapozionez. Elige 1 HÉROE TIPEJOZ NOKTURNOZ amigo completamente a 12" o menos. Suma 1 a las tiradas para impactar y a las tiradas para herir en ataques que realice esa ud. con armas de combate hasta el inicio de tu siguiente fase de héroe.
+      - nombre: Venenoz chungoz
+        descripción: Solo si tienes un Ponzoñero. Elige 1 ud. TIPEJOZ NOKTURNOZ amiga completamente a 12" o menos. Mejora en 1 el atributo perforar de las armas de esa unidad hasta el inicio de tu siguiente fase de héroe.
+      - nombre: Hiknotizar
+        descripción: Solo Ojopazmado conoce este hechizo con dificultad 6 y alcance 12", si se lanza con exito, elige 1 ud. enemiga visible. Hasta tu siguiente fase de héroe esa ud. no puede dar ni recibir órdenes
+      - nombre: Nube fungosa
+        descripción: Solo el Hongomago conoce este hechizo con dificultad 6 y alcance 12". si se lanza con exito,hasta el inicio  de tu siguiente fase de heroe, resta 1 a las tiradas para impactar en ataques que tengan como blanco uds. TIPEJOZ NOKTURNOZ amigas que esten completamente dentro del alcance.
+    Claves:
+      - DESTRUCCIÓN
+      - TIPEJOZ NOKTURNOZ
+      - GROT
+      - KLAN LUNAR
+      - MAGO
+      - GROTCHONDEO
+    command_abilities: [ ]
+    magia: [ ]
+    tabla_daño:
+      - wound_track_position:
+        move:
+        min_wounds_suffered:
+    armas_melee:
+      - nombre: Baztón, pichador o kuchillo de zierra
+        rango: 1"
+        ataques: '1'
+        impactar: '5+'
+        herir: '5+'
+        perforar: '-'
+        daño: '1'
+    missile_weapons:
+      - nombre: Arco de Klan Lunar
+        rango: 20"
+        ataques: '1'
+        impactar: '4+'
+        herir: '5+'
+        perforar: '-'
+        daño: '1'
+
+  - id: chamán_de_cueva_fungozo
+    rol: lider
+    nombre: Chamán de cueva fungozo
+    gran_alianza: Destrucción
+    alianza: Tipejoz Nokturnoz
+    movimiento: 5"
+    salva: 6+
+    coraje: 5
+    minis: 1
+    puntos: 110
+    heridas: 5
+    habilidades:
+      - nombre: MAGO
+        descripción: Esta ud. puede intentar lanzar 1 hechizo en tu fase de heroe e intentar disipar 1 hechizo en la fase de héroe enemigo.
+      - nombre: Acompañante
+        descripción: Esta ud. va acompañada por un garrapato de Ezporaz que ataca con sus dentelladas.
+      - nombre: Garrapato de Ezporaz
+        descripción: Esta ud. no es visible para uds. enemigas a más de 12" de distancia.
+      - nombre: Portavoz de Morko
+        descripción: Al inicio de tu fase de héroe, tira un dado. con 4+, obtienes 1 punto de mando adicional.
+      - nombre: Seta zombreromuette
+        descripción: una vez por batalla esta ud. puede intentar lanzar 1 hechizo adicional en esa fase de heroe, cualquier hechizo del Saber de los Klanez Lunarez.
+      - nombre: Fauces de esporas
+        descripción: dificultad de lanzamiento 7 y alcance 6", cada ud. enemiga dentro del alcance sufre 1D6 heridas mortales (cada ud. por separado)
+    Claves:
+      - DESTRUCCIÓN
+      - TIPEJOZ NOKTURNOZ
+      - GROT
+      - KLAN LUNAR
+      - HEROE
+      - MAGO
+      - CHAMÁN DE KUEVA FUNGOZO
+    command_abilities: [ ]
+    magia: [ ]
+    tabla_daño:
+      - wound_track_position:
+        move:
+        min_wounds_suffered:
+    armas_melee:
+      - nombre: Hoz lunar
+        rango: 2"
+        ataques: '3'
+        impactar: '3+'
+        herir: '4+'
+        perforar: '-1'
+        daño: '2'
+      - nombre: Dentelladas
+        rango: 1"
+        ataques: '2'
+        impactar: '4+'
+        herir: '4+'
+        perforar: '-'
+        daño: '1'
+    missile_weapons: [ ]
+
+  - id: skragrott
+    rol: lider
+    nombre: Skragrott el Lunarka
+    gran_alianza: Destrucción
+    alianza: Tipejoz Nokturnoz
+    movimiento: 5"
+    salva: 5+
+    coraje: 6
+    minis: 1
+    puntos: 230
+    heridas: 6
+    habilidades:
+      - nombre: AMO DE LA GUERRA
+        descripción: si se incluye en un ejercito Tipejoz Nokturnoz, se le considera un general aunque no sea la mini elegida como general
+      - nombre: MAGO
+        descripción: Esta ud. puede intentar lanzar 2 hechizos en tu fase de héroe e intentar disipar 2 hechizos en la fase de héroe enemiga, si forma parte de un ejercito tipejoz  nokturnoz conoce todos los hechizos del Saber del Klan Lunar.
+      - nombre: Cetro parlanchín
+        descripción: Una vez por turno puede dar una orden sin gastar CP.
+      - nombre: El Palo Lunanzatá
+        descripción: las uds. TIPEJOZ NOKTURNOZ amigas se ven afectadas por la Luz de la Luna Malvada mientras están completamente a 12" o menos de esta ud.
+      - nombre: Korona del Lunarka
+        descripción: tiene salvaguarda 4+. Además suma 1 a las tiradas de lanzamiento y disipar de esta ud.
+      - nombre: Ruego del Lunarka
+        descripción:  Una vez por batalla, antes de tirar para determinar el movimiento de la Luna Malvada puedes decidir si la Luna Malvada se mueve o no.
+      - nombre: Dientez de la Luna Malvada
+        descripción: Hechizo con dificultad de lanzamiento 3 y alcance 24", elige 1 ud. enemiga visible y tira un numero de dados igual a la tirada de lanzamiento. Por cada 3+ esa ud. sufre 1 herida mortal.
+    Claves:
+      - DESTRUCCIÓN
+      - TIPEJOZ NOKTURNOZ
+      - GROT
+      - KLAN LUNAR
+      - GROTZ DEL REY
+      - HÉROE
+      - MAGO
+      - JERARKALOKO
+      - SKRAGROTT
+    command_abilities: [ ]
+    magia: [ ]
+    tabla_daño:
+      - wound_track_position:
+        move:
+        min_wounds_suffered:
+    armas_melee:
+      - nombre: El Palo Lunanzartá
+        rango: 2"
+        ataques: '3'
+        impactar: '3+'
+        herir: '3+'
+        perforar: '-1'
+        daño: '1D3'
+    missile_weapons: [ ]

@@ -1,0 +1,39 @@
+- id:
+  nombre:
+  gran_alianza: Destrucción
+  alianza: Gloomspite Gitz
+  movimiento:
+  salva:
+  coraje:
+  minis:
+  puntos:
+  heridas:
+  habilidades:
+    - nombre:
+      descripción:
+  Claves:
+    - DESTRUCCIÓN
+    - TIPEJOZ NOKTURNOZ
+    - GROT
+  command_abilities: [ ]
+  magia: [ ]
+  tabla_daño:
+    - wound_track_position:
+      move:
+      min_wounds_suffered:
+  armas_melee:
+    - nombre: Kortakuelloz
+      rango: 1"
+      ataques: '1'
+      impactar: '5+'
+      herir: '5+'
+      perforar: '-'
+      daño: '1'
+  missile_weapons:
+    - nombre: Arco de Klan Lunar
+      rango: 20"
+      ataques: '1'
+      impactar: '4+'
+      herir: '5+'
+      perforar: '-'
+      daño: '1'

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" stylesheets="@styles/hello-view.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.sample.HelloController">
+   <children>
+      <AnchorPane fx:id="registerPane" layoutX="203.0" layoutY="49.0" prefHeight="302.0" prefWidth="383.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #701720, #101720); -fx-background-radius: 20.0;" visible="false">
+         <children>
+            <Label layoutX="83.0" layoutY="25.0" prefWidth="60.0" text="Usuario" textFill="WHITE" />
+            <TextField fx:id="usuarioTextReg" layoutX="83.0" layoutY="42.0" prefHeight="25.0" prefWidth="132.0" />
+            <Label layoutX="83.0" layoutY="67.0" text="Contraseña" textFill="WHITE" />
+            <PasswordField fx:id="passwordPassReg" layoutX="83.0" layoutY="84.0" prefHeight="25.0" prefWidth="132.0" />
+            <Label layoutX="83.0" layoutY="109.0" text="Repetir Contraseña" textFill="WHITE" />
+            <PasswordField fx:id="passwordPassRepReg" layoutX="83.0" layoutY="126.0" prefHeight="25.0" prefWidth="132.0" />
+            <Label layoutX="83.0" layoutY="151.0" prefWidth="60.0" text="Nombre" textFill="WHITE" />
+            <TextField fx:id="nombreTextReg" layoutX="83.0" layoutY="168.0" prefHeight="25.0" prefWidth="132.0" />
+            <Label layoutX="234.0" layoutY="25.0" prefWidth="60.0" text="Apellidos" textFill="WHITE" />
+            <TextField fx:id="apellidosTextReg" layoutX="234.0" layoutY="42.0" prefHeight="25.0" prefWidth="132.0" />
+            <Label layoutX="234.0" layoutY="67.0" prefWidth="60.0" text="Email" textFill="WHITE" />
+            <TextField fx:id="emailTextReg" layoutX="234.0" layoutY="84.0" prefHeight="25.0" prefWidth="132.0" />
+            <Label layoutX="234.0" layoutY="109.0" prefWidth="60.0" text="Dirección" textFill="WHITE" />
+            <TextField fx:id="direccionTextReg" layoutX="234.0" layoutY="126.0" prefHeight="25.0" prefWidth="132.0" />
+            <Button layoutX="202.0" layoutY="230.0" mnemonicParsing="false" onAction="#onRegButtonClick" text="Registrar" />
+            <Label layoutX="135.0" layoutY="268.0" text="Ya tengo una cuenta:" textFill="WHITE" />
+            <Hyperlink layoutX="247.0" layoutY="265.0" onAction="#onBackLinkClick" text="Volver al Login" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loginPane" layoutX="203.0" layoutY="49.0" prefHeight="302.0" prefWidth="383.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #701720, #101720); -fx-background-radius: 20.0;">
+         <children>
+            <Label layoutX="156.0" layoutY="82.0" prefWidth="60.0" text="Usuario" textFill="WHITE" />
+            <TextField fx:id="usuarioTextField" layoutX="156.0" layoutY="99.0" />
+            <Label layoutX="156.0" layoutY="142.0" text="Contraseña" textFill="WHITE" />
+            <PasswordField fx:id="passwordPassField" layoutX="156.0" layoutY="159.0" />
+            <Button layoutX="208.0" layoutY="208.0" mnemonicParsing="false" onAction="#onHelloButtonClick" text="Login" />
+            <Label layoutX="135.0" layoutY="268.0" text="Si no tienes cuenta registrate" textFill="WHITE" />
+            <Hyperlink layoutX="289.0" layoutY="265.0" onAction="#onRegisterLinkClick" text="AQUI" />
+            <Label layoutX="107.0" layoutY="35.0" text="Warhammer Unit Card Editor" textFill="#d73838">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="13.0" prefHeight="374.0" prefWidth="261.0" style="-fx-background-radius: 20.0;">
+         <children>
+            <ImageView fitHeight="374.0" fitWidth="261.0">
+               <clip>
+                  <Rectangle height="374.0" width="261.0">
+                     <arcHeight>20.0</arcHeight>
+                     <arcWidth>20.0</arcWidth>
+                  </Rectangle>
+               </clip>
+               <image>
+                  <Image url="@../../../images/Gloomspite.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="closeButton" layoutX="223.0" layoutY="14.0" mnemonicParsing="false" onAction="#onCloseButtonClick" text="X" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

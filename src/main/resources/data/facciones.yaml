@@ -1,0 +1,22 @@
+filas:
+  - id: tipejoz_nokturnoz
+    nombre: Tipejoz Nokturnoz
+    gran_alianza: Destrucción
+  - id: klanez_orruk
+    nombre: Klanez Orruk
+    gran_alianza: Destrucción
+  - id: hijos_behemat
+    nombre: Hijos de Behemat
+    gran_alianza: Destrucción
+  - id: mascatribus_ogor
+    nombre: Mascatribus Ogor
+    gran_alianza: Destrucción
+  - id: filos_khorne
+    nombre: Filos de Khorne
+    gran_alianza: Caos
+  - id: stormcast
+    nombre: Forjados de la Tormenta
+    gran_alianza: Orden
+  - id: noctanimas
+    nombre: Noctánimas
+    gran_alianza: Muerte

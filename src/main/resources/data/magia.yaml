@@ -1,0 +1,22 @@
+fila:
+  - id: saber_klan_lunar
+    nombre: Saber de los klanez lunarez
+    hechizos:
+      - nombre: Pikor molezto
+        descripción: Dificultad de lanzamiento 6 y alcance 18". Elige 1 ud. enemiga. El efecto de atacar último se aplcia a esa ud. hasta final de turno.
+      - nombre: ¡Trinkalo! ¡Trinkalo!
+        descripción: Dificultad de lanzamiento 8 y alcance 12". Elige 1 mini enemiga. La ud. de esa mini sufre 1D3 heridas mortales. Además si la tirada fue 10+ y la mini tiene un artefacto de poder, esa mini no puede volver a usar dicho artefacto, si dicho artefacto mejoraba un arma, esta vuelve a su forma normal.
+      - nombre: Zeñuelo pa garrapatoz
+        descripción: Dificultad de lanzamiento 5 y alcance 18". Elige 1 ud. GARRAPATO amiga. Hasta tu siguiente fase de héroe, puedes repetir las tiradas de carga de esa ud.
+      - nombre: La mano de Gorko
+        descripción: Dificultad de lanzamiento 7 y alcance 24". Elige 1 ud. TIPEJOZ NOKTURNOZ amiga a mas de 3" de toda ud. enemiga. Teleporta a esa ud. a cualquier punto del mapa a más de 9" de toda ud. enemiga, No puede moverse en la siguiente fase de movimiento.
+
+  - id: saber_del_kolmilloaraña
+    nombre: Saber del kolmilloaraña
+    hechizos:
+      - nombre: Terrorez reptantez
+      - descripción: Dificultad de lanzamiento 6 y alcance 18". Elige una ud. KOLMILLOARAÑA amiga. esa ud. puede hacer un movimiento normal.
+      - nombre: Diztrazión aztuta
+      - descripción: Dificultad de lanzamiento 7 y alcance 12". Resta 1 a las tiradas para impactar en ataques realizados por uds. enemigas dentro del alcance del lanzador hasta la siguiente fase de héroe.
+      - nombre: Maldizión del dioz araña
+      - descripción: Dificultad de lanzamiento 7 y alcance 24". Elige una ud. enemiga. Hasta el inicio de tu siguiente fase de héroe, las tiradas para impactar y salvación realizados por esa ud. siempre fallan con un 1 o 2 sin modificar.

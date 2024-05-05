@@ -1,0 +1,39 @@
+fila:
+  - id: tesoros_trogloditicos
+    nombre: Tesoros troglodíticos
+    restricción: HÉROE KLAN LUNAR
+    artefactos:
+      - nombre: Ezkudo burlón
+        descripción: Las tiradas de 1 sin modificar de ataque al portador causan 1 herida mortal tras resolver sus ataques. Además si el portador muere debido al ataque de una ud. enemiga, resta 1 a las tiradas de impactar de esa ud. hasta el final de la batalla.
+      - nombre: Puñal pa puñalar
+        descripción: Una vez por batalla, al final de la fase de combate, puedes usar el puñal. Elige 1 ud. enemiga a 1" o menos y tira un dado. con 2+ esa ud. sufre 1D6 heridas mortales que no pueden negarse.
+      - nombre: Capuchavizkoza
+        descripción: Resta 1 a las tiradas para impactar en ataques que tengan como blanco al portador.
+      - nombre: Dentaduroz de piedra lunátika
+        descripción: Solo HÉROE GARRAPATO con montura o acompañante. Mejora en 1 el atributo perforar de la bokaza colmilluda, gran bokaza o enormes bokazas colmilludas del portador.
+      - nombre: Muñekito karaluno
+        descripción: Solo MAGO. Al incio de la fase de combate, elige 1 ud. enemiga a 12" o menos del portador. Resta 1 a las tiradas de salvación contra ataques que tengan como blanco esa ud. hasta final de la fase.
+      - nombre: Bákulo chorizamagia
+        descripción: Solo MAGO. Suma 1 a las tiradas de lanzamiento del portador. Cada vez que el portador disipa 1 magia, suma 1 a las tiradas de lanzamiento durante el resto de la batalla.
+
+  - id: bagatelas_venenosas
+    nombre: Bagatelas venenosas
+    restricción: HÉROE KOLMILLOARAÑA
+    artefactos:
+      - nombre: Diadema de loz milojoz
+        descripción:
+      - nombre: Anillo Pegapiñoz de Nibbla
+        descripción:
+      - nombre: Tótem del Dios Araña
+        descripción:
+
+  - id: kozaz_brillantez_kenkontraron_loz_troggothz
+    nombre: Kozaz brillantez kenkontraron loz troggothz
+    restricción: JEFETROGG KUBILMOHOZO
+    artefactos:
+      - nombre: Kachivache ke da luz
+        descripción:
+      - nombre: Fetiche de kráneoz parlanchinez
+        descripción:
+      - nombre: Mazkota guapita
+        descripción:
